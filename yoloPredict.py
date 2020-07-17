@@ -111,6 +111,7 @@ def yolo_detect_object(yolo, img_path, save_img, save_img_path="./", postfix="")
     
     return prediction, image_array
 
+# https://stackoverflow.com/questions/35911252/disable-tensorflow-debugging-information
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 
 #set up default folder names
