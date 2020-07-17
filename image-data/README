@@ -1,0 +1,3 @@
+The image data is partitioned into train, test and valiation
+
+East folder contains the images, an object class file (.txt) and an boundibg box annotation file
