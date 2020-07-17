@@ -157,7 +157,6 @@ class YOLO(object):
             else:
                 text_origin = np.array([left, top + 1])
 
-            out_prediction.append
             # My kingdom for a good redistributable image drawing library.
             for i in range(thickness):
                 draw.rectangle(
@@ -172,7 +171,7 @@ class YOLO(object):
         end = timer()
         print(end - start)
         print("I am done at yolo.detect_image")
-        return image
+        return out_prediction, image
 
     def close_session(self):
         self.sess.close()
