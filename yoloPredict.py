@@ -319,8 +319,8 @@ if __name__=='__main__':
                 
         end = timer()
         print("Processed {} images in {:.1f}sec - {:.1f}FPS".format(
-            len(input_image_paths), end - start, 
-            len(input_image_paths) / (end - start)))
+            len(input_img_paths), end - start, 
+            len(input_img_paths) / (end - start)))
             
         outDF.to_csv(FLAGS.box, index=False)
         
