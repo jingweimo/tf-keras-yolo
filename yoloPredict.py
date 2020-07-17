@@ -11,7 +11,7 @@ The detection results are saved to:
 
 For video, the output files are videos with bounding boxes and confidence scores
 
-See also: yolo.py and yolo_video.py
+See also: yolo.py
 @author: Daisy
 """
 
