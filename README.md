@@ -4,7 +4,11 @@ The tf-keras-yolo are used for training a YOLOv3 model on custom dasets by deplo
 These scripts are adapdated from the fantastic work made by https://github.com/qqwweee/keras-yolo3 and https://github.com/AlexeyAB/darknet
 
 # training
+```
 !python yoloTrain.py "--epoch" 100 "--classes_file" "image_data/train/yolov3_object_classes.txt" "--annotation_file" "image_data/train/yolov3_annotations.txt"
+```
 
 # prediction
+```
 !python yoloPredict.py "--input_path" "image_data/test" "--classes" "image_data/train/yolov3_object_classes.txt" "--yolo_model" "image_data/modelWeights/Logging/trained_weights_final.h5" "--output" "image_data/objectDetectionResults" "--box_file" "image_data/objectDetectionResults/detection.csv"
+```
